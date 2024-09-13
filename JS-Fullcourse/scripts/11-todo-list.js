@@ -22,7 +22,7 @@ for(let i = 0; i < toDoList.length; i++) {
           <button onClick="
           toDoList.splice(${i}, 1);
           renderToDo();
-          ">Delete</button>
+          " class="input-delete">Delete</button>
     `;
     toDoListHTML += html;
 }
