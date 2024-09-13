@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Objects</h1>
+
+    <script>
+        /*
+const product = {
+    name: "Gold",
+    price: 1000.00
+};
+console.log(product);
+console.log(product.name);
+
+product.name = 'Price of success';
+product.price = 'Pain';
+console.log(product);
+
+product.newProperty = 'true';
+console.log(product);
+
+delete product.newProperty;
+console.log(product);
+*/
+
+/*
+  const product2 = {
+    name: "Gold",
+    stock: 'Rising',
+
+    rating: {
+        stars: 4.5,
+        count: 87
+    },
+
+    fun: function function1 () {
+        console.log('You got this Don!');
+    }
+  };
+
+  console.log(product2);
+  console.log(product2.name);
+  console.log(product2['name']);
+console.log(product2.rating.stars);
+product2.fun();
+
+console.log(JSON.stringify(product2));
+
+const jsonString = JSON.stringify(product2);
+
+console.log(JSON.parse(jsonString));
+*/
+
+const object3 = {
+    message: 'You got this!'
+};
+console.log(object3.message);
+
+const object4 = {
+    message: 'You got this!',
+    price: 999
+};
+const {message, price} = object4;
+console.log(message);
+console.log(price);
+    </script>
+</body>
+</html>

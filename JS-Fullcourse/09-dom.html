@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button>Hello</button>
+    <button class="js-button">Hi</button>
+    <script>
+console.log(document.querySelector('button').innerHTML);
+
+document.querySelector('button').innerHTML = 'Success';
+      console.log(document.querySelector('.js-button').innerHTML);
+/*console.log(document.title);
+        document.title = 'Inshallah';
+        console.log(document.title);
+
+        console.log(document.body);
+
+        document.body.innerHTML = '<button>Stay Focused</button>';
+*/
+    /*document.body.innerHTML = 'wozaaa';
+    document.title = 'Grind bro';*/
+    </script>
+</body>
+</html>
