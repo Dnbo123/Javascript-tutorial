@@ -4,14 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrays and Loops</title>
-    <style>
-
-    </style>
+    
 </head>
 <body>
-
+<h1>Advanced functions</h1>
    <script>
+    /*
+  function greeting() {
+    console.log('hello');
+  }
+  greeting();
   
+  //Creating an anonymous function(function without a name) & saving in a variable
+  let greet = function() {
+    console.log('hello');
+  }
+  greet();
+
+  //Creating a method(function saved inside an object)
+  let hello3 = {
+    sayHello: function() {
+        console.log('hello');
+    }
+  }
+  hello3.sayHello();
+
+  //Passing a value inside a function
+  function sayHello(param) {
+    console.log(param);
+  }
+sayHello('Don');
+
+//Passing a function inside another function
+function run(param) {
+    param();
+}
+run(function don() {
+    console.log('hello');
+})
+    */
+
+//Calling a function in the future
+setTimeout(function omosh(){
+    console.log('You got this Don!');
+}, 5000);
+//Making the above code asynchronous
+console.log('Check this out');
+
     </script>
 </body>
 </html>
