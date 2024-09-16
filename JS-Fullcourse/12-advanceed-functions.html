@@ -8,7 +8,25 @@
 </head>
 <body>
 <h1>Advanced functions</h1>
+
+<button onClick="" class="js-button">Click</button>
    <script>
+//Adding an event listener
+
+const eventListener = () => {
+  console.log('Button clicked')};
+
+   const buttonElement = document.querySelector('.js-button');
+      buttonElement.addEventListener('click', eventListener);
+
+      //Removing an event listener
+    buttonElement.removeEventListener('click', eventListener);
+
+      buttonElement.addEventListener('click', () => {
+  console.log('Button clicked again');
+});
+
+
     /*
   function greeting() {
     console.log('hello');
@@ -52,6 +70,7 @@ setTimeout(function omosh(){
 console.log('Check this out');
 */
 
+/*
 //using forEach() method
 [
   'Don Bosco',
@@ -61,6 +80,25 @@ console.log('Check this out');
   console.log(name);
   console.log(value);
 });
-    </script>
+
+
+//Arrow functions
+   const arrowFunctions = () => {
+    console.log('Hello from arrow function');
+   }
+   arrowFunctions();
+
+   const oneParam = (param) => {
+       console.log(param + 1);
+   }
+oneParam(2);
+
+
+//One line arrow function
+const oneLine = () => 2 + 3;
+console.log(oneLine());
+*/
+
+</script>
 </body>
 </html>
