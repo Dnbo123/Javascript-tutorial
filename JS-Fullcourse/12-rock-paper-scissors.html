@@ -30,12 +30,10 @@
       score.losses = 0;
       score.ties = 0;
       localStorage.removeItem('score');
-      updateScoreElement();
-    " class="reset-score-button">Reset Score</button>
+      updateScoreElement(); 
+    " class="reset-score-button js-reset-button">Reset Score</button>
 
-    <button class="auto-play-btn" onclick="
-    autoPlay();
-    ">Auto play</button>
+    <button class="auto-play-btn js-autoPlay-button">Auto play</button>
 
     <script src="/Javascript-tutorial/JS-Fullcourse/scripts/12-rock-paper-scissors.js"></script>
   </body>
