@@ -1,4 +1,4 @@
-import formatCurrency from "../scripts/utilities/money.js";
+import formatCurrency from "../../scripts/utilities/money.js";
 
 //Creating a Suit
 describe('test suite: formartCurrency', () => {

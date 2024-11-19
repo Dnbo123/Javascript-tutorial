@@ -1,7 +1,18 @@
 const DEFAULT_DELIVERY_OPTION_ID = '1';
 
 
-export let cart = JSON.parse(localStorage.getItem('cart'));
+export let cart;
+
+loadFromStorage();
+
+//Ensure all existing cart items have a deliveryOptionId
+cart = cart.map(item => ({
+    ...item,
+    deliveryOptionId: item.deliveryOptionId || DEFAULT_DELIVERY_OPTION_ID
+}));
+
+export function loadFromStorage() {
+    cart = JSON.parse(localStorage.getItem('cart'));
 
 if(!cart) {
 cart = [{
@@ -16,12 +27,7 @@ cart = [{
     
 }
 
-//Ensure all existing cart items have a deliveryOptionId
-cart = cart.map(item => ({
-    ...item,
-    deliveryOptionId: item.deliveryOptionId || DEFAULT_DELIVERY_OPTION_ID
-}));
-
+}
 
 function saveToStorage() {
     localStorage.setItem('cart', JSON.stringify(cart));
