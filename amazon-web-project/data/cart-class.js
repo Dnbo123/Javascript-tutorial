@@ -1,18 +1,19 @@
 class Cart {
     cartItems; 
-    localStorageKey;
+         //Making local storage key a private property
+    #localStorageKey;
 
     constructor(localStorageKey) {
         //using 'this' to point to the object generated inside the class
-        this.localStorageKey = localStorageKey;
-        this.loadFromStorage();
+        this.#localStorageKey = localStorageKey;
+        this.#loadFromStorage();
     }
  
-    loadFromStorage() {
+    #loadFromStorage() {
    
         //Using this. to get the outer object(cart)
     
-            this.cartItems = JSON.parse(localStorage.getItem(this.localStorageKey));
+            this.cartItems = JSON.parse(localStorage.getItem(this.#localStorageKey));
         
         if(!this.cartItems) {
         this.cartItems = [{
@@ -30,7 +31,7 @@ class Cart {
         }
 
     saveToStorage() {
-            localStorage.setItem(this.localStorageKey, JSON.stringify(this.cartItems));
+            localStorage.setItem(this.#localStorageKey, JSON.stringify(this.cartItems));
         }
 
         addToCart(productId) {
