@@ -42,7 +42,10 @@ export function getProduct(productId) {
     return``;
   }
   }
-
+/*
+  const date = new Date();
+  console.log(date);
+  */ 
   class Clothing extends Product {
     sizeChartLink;
 
